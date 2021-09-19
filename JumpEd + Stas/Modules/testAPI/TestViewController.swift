@@ -108,7 +108,7 @@ class TestViewController: UIViewController {
         cardCollectionView.register(UINib(nibName: "CardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CardCollectionViewCell")
         cardCollectionView.isPagingEnabled = true
         cardCollectionView.isHidden = false
-        cardCollectionView.showsHorizontalScrollIndicator = false
+        cardCollectionView.showsHorizontalScrollIndicator = true
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         self.cardCollectionView.collectionViewLayout = layout
