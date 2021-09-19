@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreInfoViewController" customModule="JumpEd___Stas" customModuleProvider="target">
+            <connections>
+                <outlet property="closeItButton" destination="1pt-Tg-cwt" id="8Ie-eb-USq"/>
+                <outlet property="infoTableView" destination="Ju7-Hm-AoZ" id="SAW-xT-9Py"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ju7-Hm-AoZ">
+                    <rect key="frame" x="8" y="74" width="398" height="358.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pt-Tg-cwt" customClass="AppButton" customModule="JumpEd___Stas" customModuleProvider="target">
+                    <rect key="frame" x="16" y="776" width="382" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="10K-BW-aho"/>
+                    </constraints>
+                    <state key="normal" title="Close It"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ju7-Hm-AoZ" secondAttribute="trailing" constant="8" id="5xX-4u-gE5"/>
+                <constraint firstItem="Ju7-Hm-AoZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.4" id="865-8X-cPc"/>
+                <constraint firstItem="1pt-Tg-cwt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="FkL-Ep-Awf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1pt-Tg-cwt" secondAttribute="bottom" constant="32" id="J6f-E3-6Da"/>
+                <constraint firstItem="Ju7-Hm-AoZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="UR7-Wr-M5H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1pt-Tg-cwt" secondAttribute="trailing" constant="16" id="mZV-cs-fAC"/>
+                <constraint firstItem="Ju7-Hm-AoZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="qrj-dx-UhI"/>
+            </constraints>
+            <point key="canvasLocation" x="112" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
